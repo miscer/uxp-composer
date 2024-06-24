@@ -1,0 +1,14 @@
+.app {
+  padding: 10px;
+  color: white;
+}
+
+.app h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.app img, .app video {
+  display: block;
+  border: 1px solid red;
+}

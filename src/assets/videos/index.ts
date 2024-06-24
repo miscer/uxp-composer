@@ -1,0 +1,14 @@
+export {default as video1} from "./1-Line Fill Text Box 1 - Down.mogrt.mhpreview.webm";
+export {default as video2} from "./1-Line Fill Text Box 1 - Up.mogrt.mhpreview.webm";
+export {default as video3} from "./1-Line Fill Text Box 2 - Left.mogrt.mhpreview.webm";
+export {default as video4} from "./1-Line Fill Text Box 2 - Right.mogrt.mhpreview.webm";
+export {default as video5} from "./1-Line Fill Text Box 3 - Left.mogrt.mhpreview.webm";
+export {default as video6} from "./1-Line Fill Text Box 3 - Right.mogrt.mhpreview.webm";
+export {default as video7} from "./1-Line Outline Text Box 1 - Down.mogrt.mhpreview.webm";
+export {default as video8} from "./1-Line Outline Text Box 1 - Up.mogrt.mhpreview.webm";
+export {default as video9} from "./1-Line Outline Text Box 2 - Left.mogrt.mhpreview.webm";
+export {default as video10} from "./1-Line Outline Text Box 2 - Right.mogrt.mhpreview.webm";
+export {default as video11} from "./1-Line Outline Text Box 3 - Left.mogrt.mhpreview.webm";
+export {default as video12} from "./1-Line Outline Text Box 3 - Right.mogrt.mhpreview.webm";
+export {default as video13} from "./Multiline Fill Text Box - Left.mogrt.mhpreview.webm";
+export {default as video14} from "./Multiline Outline Text Box - Left.mogrt.mhpreview.webm";
