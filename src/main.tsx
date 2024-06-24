@@ -1,5 +1,5 @@
 import React, {useRef} from "react";
-import * as videos from "./assets/videos";
+import * as videos from "./assets/mp4";
 import "./main.css";
 
 export const App = () => {
