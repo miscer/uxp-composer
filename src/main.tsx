@@ -1,21 +1,31 @@
-import React, {useRef} from "react";
-import * as videos from "./assets/mp4";
+import React, {useEffect, useRef} from "react";
 import "./main.css";
 
-export const App = () => {
-  const videoRef = useRef<HTMLVideoElement>(null);
+const ppro = require("premierepro");
 
+export const App = () => {
   return (
     <div className="app">
       <h1>Animation Composer</h1>
-
-      {Array.from({length: 10}).map((_, i) => (
-        <div key={i} style={{display: "flex", flexWrap: "wrap"}}>
-          {Object.values(videos).map((video, i) => (
-            <video key={i} src={video} width={100} height={80} loop onClick={(event) => event.currentTarget.play()}/>
-          ))}
-        </div>
-      ))}
+      <button onClick={loadData}>Load Data</button>
     </div>
   );
 };
+
+async function loadData() {
+  const project = await ppro.Project.getActiveProject();
+  if (!project) {
+    console.log("No active project found");
+    return;
+  }
+
+  const sequence = await project.getActiveSequence();
+  if (!sequence) {
+    console.log("No active sequence found");
+    return;
+  }
+  console.log("sequence", sequence);
+
+  const videoTrack = await sequence.getVideoTrack(0);
+  console.log("video track", videoTrack);
+}
